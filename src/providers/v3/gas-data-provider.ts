@@ -37,7 +37,11 @@ export class OptimismGasDataProvider
     protected multicall2Provider: IMulticallProvider,
     gasPriceAddress?: string
   ) {
-    if (chainId !== ChainId.OPTIMISM && chainId !== ChainId.BASE) {
+    if (
+      chainId !== ChainId.OPTIMISM &&
+      chainId !== ChainId.BASE &&
+      chainId !== ChainId.OPTIMISM_GOERLI
+    ) {
       throw new Error('This data provider is used only on optimism networks.');
     }
     this.gasOracleAddress = gasPriceAddress ?? OVM_GASPRICE_ADDRESS;
