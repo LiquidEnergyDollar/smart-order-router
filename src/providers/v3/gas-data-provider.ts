@@ -40,7 +40,8 @@ export class OptimismGasDataProvider
     if (
       chainId !== ChainId.OPTIMISM &&
       chainId !== ChainId.BASE &&
-      chainId !== ChainId.OPTIMISM_GOERLI
+      chainId !== ChainId.OPTIMISM_GOERLI &&
+      chainId !== ChainId.BASE_GOERLI
     ) {
       throw new Error('This data provider is used only on optimism networks.');
     }

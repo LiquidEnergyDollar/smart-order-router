@@ -474,10 +474,10 @@ export const USDC_BASE = new Token(
 // Base Goerli Tokens 
 export const USDC_BASE_GOERLI = new Token(
   ChainId.BASE_GOERLI,
-  '0x853154e2A5604E5C74a2546E2871Ad44932eB92C',
+  '0xf175520c52418dfe19c8098071a252da48cd1c19',
   6,
-  'USDbC',
-  'USD Base Coin'
+  'USDC',
+  'USD Coin'
 )
 
 // Gnosis Tokens
